@@ -1,58 +1,41 @@
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
-
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
-
-"hoge"が何かを簡潔に紹介する
+# KaitPV
+先進研でのロボットテスト用シミュレータ
 
 # DEMO
 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
-
-# Features
-
-"hoge"のセールスポイントや差別化などを説明する
-
 # Requirement
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
-* hogehuga 1.0.2
+* ubuntu 18.04
+* ros melodic
 
 # Installation
 
-Requirementで列挙したライブラリなどのインストール方法を説明する
-
 ```bash
-pip install huga_package
+cd ~/catkin_ws/src
+git clone https://github.com/kait-wakita/kaitpv.git
+cd plugins/animatedbox
+rm -rf build
+mkdir build
+cd build
+cmake ..
+make
 ```
 
 # Usage
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
-
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+roscd kaitpv/plugins/animatedbox
+source gazebo_path_set.sh
+roslaunch kaitpv kaitpv_with_d2_walk1.launch
+
 ```
 
 # Note
 
-注意点などがあれば書く
-
 # Author
 
-作成情報を列挙する
-
-* 作成者
-* 所属
-* E-mail
+* wakit@cco.kanagawa-it.ac.jp
 
 # License
-ライセンスを明示する
 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
+"kaitpv" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
