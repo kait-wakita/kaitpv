@@ -1,0 +1,5 @@
+/home/wakita/catkin_ws/src/kaitpv/plugins/animatedbox/build/CMakeFiles/edit_cache.dir
+/home/wakita/catkin_ws/src/kaitpv/plugins/animatedbox/build/CMakeFiles/animated_box.dir
+/home/wakita/catkin_ws/src/kaitpv/plugins/animatedbox/build/CMakeFiles/rebuild_cache.dir
+/home/wakita/catkin_ws/src/kaitpv/plugins/animatedbox/build/CMakeFiles/independent_listener.dir
+/home/wakita/catkin_ws/src/kaitpv/plugins/animatedbox/build/CMakeFiles/integrated_main.dir
