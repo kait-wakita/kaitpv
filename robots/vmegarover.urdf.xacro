@@ -9,7 +9,7 @@
   <!-- Base -->
   <link name="base_footprint"/>
   <xacro:base_v0 parent="base_footprint">
-    <origin xyz="-1.4 1.4 0"/>
+    <origin xyz="0 0 0"/>
   </xacro:base_v0>
 
   <!-- Wheel -->

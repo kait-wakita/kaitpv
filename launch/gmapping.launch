@@ -1,0 +1,14 @@
+<!--
+SLAM gmapping
+-->
+
+<launch>
+  <!-- gmapping -->
+  <node pkg="gmapping" type="slam_gmapping" name="mapper">
+    <param name="maxUrange" value="100.0" type="double" />
+    <param name="delta" value="0.05" />
+    <param name="linearUpdate" value="0.05" />
+    <param name="angularUpdate" value="0.10" />
+  </node>
+
+</launch>
