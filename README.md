@@ -8,8 +8,8 @@
 * ロボットはメガローバシミュレータ使用
 
 <div><video controls src="https://user-images.githubusercontent.com/47593183/210132659-54314fad-dedf-4234-b3df-dabe08eec6b0.mp4" muted="false"></video></div>
-<img src="images/kaitpv_gazebo.png" width="300">
-<img src="images/kaitpv_rviz.png" width="250">
+<img src="images/kaitpv_gazebo.png" width="500">
+<img src="images/kaitpv_rviz.png" width="500">
 
 
 # 動作条件
