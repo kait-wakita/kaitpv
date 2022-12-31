@@ -9,7 +9,6 @@
 
 
 移動障害物実験
-<div><video controls src="https://user-images.githubusercontent.com/47593183/210132659-54314fad-dedf-4234-b3df-dabe08eec6b0.mp4" muted="false"></video></div>
 <div><video controls src="images/kaitpv_gazebo_walk1.mp4" muted="false"></video></div>
 
 静止障害物実験
