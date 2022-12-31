@@ -30,7 +30,12 @@
     args="-urdf -model vmegarover -param robot_description"/>
 
 
-  <!-- ros_control motoman launch file -->
+
   <include file="$(find kaitpv)/launch/vmegarover_control.launch"/>
+  
+  <include file="$(find kaitpv)/launch/amcl.launch"/>
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find kaitpv)/rviz/kaitpv_amcl.rviz"/>
+
 
 </launch>
