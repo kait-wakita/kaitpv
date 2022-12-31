@@ -15,7 +15,9 @@
 
 * ubuntu 18.04
 * ros melodic
-    * WSL2 (windows11)で動作確認済
+* megarover シミュレータ
+    * インストールはcd ~/catkin_ws/src; git clone https://github.com/vstoneofficial/megarover_samples/
+* WSL2 (windows11)でも動作確認済
 
 # インストール
 git cloneだけで動くと思われるが、念のため一部再buildする
@@ -66,7 +68,7 @@ roslaunch kaitpv kaitpv_with_d2_walk1.launch
 
 
 # 注意点
-* Gazeboでのシミュレーションが立ち上がらくなる事あり、原因・対策不明、何度か繰り返すと解決する場合あり、最終的には再起動
+* WSL2では、Gazeboでのシミュレーションが立ち上がらくなる事あり、原因・対策不明、何度か繰り返すと解決する場合あり、最終的には再起動
 
 # Note
 * 2022.12.31 最初のバージョン
