@@ -7,15 +7,25 @@
 * MATLABのサンプル経路生成プログラム
 * ロボットはメガローバシミュレータ使用
 
-<img src="images/kaitpv_gazebo.png" width="300">
-<img src="images/kaitpv_rviz.png" width="250">
+
+移動障害物実験
+<div><video controls src="https://user-images.githubusercontent.com/47593183/210132659-54314fad-dedf-4234-b3df-dabe08eec6b0.mp4" muted="false"></video></div>
+<div><video controls src="images/kaitpv_gazebo_walk1.mp4" muted="false"></video></div>
+
+静止障害物実験
+<img src="images/kaitpv_gazebo.png" width="640">
+
+自己位置推定
+<img src="images/kaitpv_rviz.png" width="640">
 
 
 # 動作条件
 
 * ubuntu 18.04
 * ros melodic
-    * WSL2 (windows11)で動作確認済
+* megarover シミュレータ
+    * インストールはcd ~/catkin_ws/src; git clone https://github.com/vstoneofficial/megarover_samples/
+* WSL2 (windows11)でも動作確認済
 
 # インストール
 git cloneだけで動くと思われるが、念のため一部再buildする
@@ -66,7 +76,7 @@ roslaunch kaitpv kaitpv_with_d2_walk1.launch
 
 
 # 注意点
-* Gazeboでのシミュレーションが立ち上がらくなる事あり、原因・対策不明、何度か繰り返すと解決する場合あり、最終的には再起動
+* WSL2では、Gazeboでのシミュレーションが立ち上がらくなる事あり、原因・対策不明、何度か繰り返すと解決する場合あり、最終的には再起動
 
 # Note
 * 2022.12.31 最初のバージョン
