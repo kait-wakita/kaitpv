@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/wakita/catkin_ws/src/kaitpv/plugins/animatedbox/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named animated_box
-
-# Build rule for target.
-animated_box: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 animated_box
-.PHONY : animated_box
-
-# fast build rule for target.
-animated_box/fast:
-	$(MAKE) -f CMakeFiles/animated_box.dir/build.make CMakeFiles/animated_box.dir/build
-.PHONY : animated_box/fast
-
-#=============================================================================
 # Target rules for targets named independent_listener
 
 # Build rule for target.
@@ -148,6 +135,32 @@ integrated_main: cmake_check_build_system
 integrated_main/fast:
 	$(MAKE) -f CMakeFiles/integrated_main.dir/build.make CMakeFiles/integrated_main.dir/build
 .PHONY : integrated_main/fast
+
+#=============================================================================
+# Target rules for targets named animated_box
+
+# Build rule for target.
+animated_box: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 animated_box
+.PHONY : animated_box
+
+# fast build rule for target.
+animated_box/fast:
+	$(MAKE) -f CMakeFiles/animated_box.dir/build.make CMakeFiles/animated_box.dir/build
+.PHONY : animated_box/fast
+
+#=============================================================================
+# Target rules for targets named animated_box2
+
+# Build rule for target.
+animated_box2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 animated_box2
+.PHONY : animated_box2
+
+# fast build rule for target.
+animated_box2/fast:
+	$(MAKE) -f CMakeFiles/animated_box2.dir/build.make CMakeFiles/animated_box2.dir/build
+.PHONY : animated_box2/fast
 
 animated_box.o: animated_box.cc.o
 
@@ -175,6 +188,33 @@ animated_box.s: animated_box.cc.s
 animated_box.cc.s:
 	$(MAKE) -f CMakeFiles/animated_box.dir/build.make CMakeFiles/animated_box.dir/animated_box.cc.s
 .PHONY : animated_box.cc.s
+
+animated_box2.o: animated_box2.cc.o
+
+.PHONY : animated_box2.o
+
+# target to build an object file
+animated_box2.cc.o:
+	$(MAKE) -f CMakeFiles/animated_box2.dir/build.make CMakeFiles/animated_box2.dir/animated_box2.cc.o
+.PHONY : animated_box2.cc.o
+
+animated_box2.i: animated_box2.cc.i
+
+.PHONY : animated_box2.i
+
+# target to preprocess a source file
+animated_box2.cc.i:
+	$(MAKE) -f CMakeFiles/animated_box2.dir/build.make CMakeFiles/animated_box2.dir/animated_box2.cc.i
+.PHONY : animated_box2.cc.i
+
+animated_box2.s: animated_box2.cc.s
+
+.PHONY : animated_box2.s
+
+# target to generate assembly for a file
+animated_box2.cc.s:
+	$(MAKE) -f CMakeFiles/animated_box2.dir/build.make CMakeFiles/animated_box2.dir/animated_box2.cc.s
+.PHONY : animated_box2.cc.s
 
 independent_listener.o: independent_listener.cc.o
 
@@ -236,14 +276,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... animated_box"
 	@echo "... rebuild_cache"
 	@echo "... independent_listener"
 	@echo "... integrated_main"
+	@echo "... edit_cache"
+	@echo "... animated_box"
+	@echo "... animated_box2"
 	@echo "... animated_box.o"
 	@echo "... animated_box.i"
 	@echo "... animated_box.s"
+	@echo "... animated_box2.o"
+	@echo "... animated_box2.i"
+	@echo "... animated_box2.s"
 	@echo "... independent_listener.o"
 	@echo "... independent_listener.i"
 	@echo "... independent_listener.s"
