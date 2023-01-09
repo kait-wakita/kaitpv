@@ -14,11 +14,14 @@ link_directories(${GAZEBO_LIBRARY_DIRS})
 
 # Create libraries and executables
 
-add_library(animated_box SHARED animated_box.cc)
-target_link_libraries(animated_box ${GAZEBO_LIBRARIES})
+add_library(animated_box1 SHARED animated_box1.cc)
+target_link_libraries(animated_box1 ${GAZEBO_LIBRARIES})
 
 add_library(animated_box2 SHARED animated_box2.cc)
 target_link_libraries(animated_box2 ${GAZEBO_LIBRARIES})
+
+add_library(animated_box3 SHARED animated_box3.cc)
+target_link_libraries(animated_box3 ${GAZEBO_LIBRARIES})
 
 add_executable(integrated_main integrated_main.cc)
 target_link_libraries(integrated_main ${GAZEBO_LIBRARIES} pthread)

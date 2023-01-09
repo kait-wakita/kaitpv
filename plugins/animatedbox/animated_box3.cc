@@ -39,21 +39,21 @@ namespace gazebo
         gazebo::common::PoseKeyFrame *key;
 
         // set starting location of the box
-        key = anim->CreateKeyFrame(0);
-        key->Translation(ignition::math::Vector3d(10, 1, 0));
+        key = anim->CreateKeyFrame(0.0);
+        key->Translation(ignition::math::Vector3d(10, 2, 0));
         //key->Rotation(ignition::math::Quaterniond(0, 0, 0));
 
-        key = anim->CreateKeyFrame(3.0);
-        key->Translation(ignition::math::Vector3d(10, 1, 0));
+        key = anim->CreateKeyFrame(4.0);
+        key->Translation(ignition::math::Vector3d(10, 2, 0));
 
-        key = anim->CreateKeyFrame(13.0);
-        key->Translation(ignition::math::Vector3d(2, 1, 0));
+        key = anim->CreateKeyFrame(14.0);
+        key->Translation(ignition::math::Vector3d(2, -2, 0));
 
 	      key = anim->CreateKeyFrame(15.0);
-        key->Translation(ignition::math::Vector3d(2, 1, 0));
+        key->Translation(ignition::math::Vector3d(2, -2, 0));
 
 	      key = anim->CreateKeyFrame(20);
-        key->Translation(ignition::math::Vector3d(10, 1, 0));
+        key->Translation(ignition::math::Vector3d(10, 2, 0));
 
         // set the animation
         _parent->SetAnimation(anim);

@@ -111,17 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named independent_listener
+# Target rules for targets named animated_box2
 
 # Build rule for target.
-independent_listener: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 independent_listener
-.PHONY : independent_listener
+animated_box2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 animated_box2
+.PHONY : animated_box2
 
 # fast build rule for target.
-independent_listener/fast:
-	$(MAKE) -f CMakeFiles/independent_listener.dir/build.make CMakeFiles/independent_listener.dir/build
-.PHONY : independent_listener/fast
+animated_box2/fast:
+	$(MAKE) -f CMakeFiles/animated_box2.dir/build.make CMakeFiles/animated_box2.dir/build
+.PHONY : animated_box2/fast
+
+#=============================================================================
+# Target rules for targets named animated_box3
+
+# Build rule for target.
+animated_box3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 animated_box3
+.PHONY : animated_box3
+
+# fast build rule for target.
+animated_box3/fast:
+	$(MAKE) -f CMakeFiles/animated_box3.dir/build.make CMakeFiles/animated_box3.dir/build
+.PHONY : animated_box3/fast
+
+#=============================================================================
+# Target rules for targets named animated_box1
+
+# Build rule for target.
+animated_box1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 animated_box1
+.PHONY : animated_box1
+
+# fast build rule for target.
+animated_box1/fast:
+	$(MAKE) -f CMakeFiles/animated_box1.dir/build.make CMakeFiles/animated_box1.dir/build
+.PHONY : animated_box1/fast
 
 #=============================================================================
 # Target rules for targets named integrated_main
@@ -137,57 +163,44 @@ integrated_main/fast:
 .PHONY : integrated_main/fast
 
 #=============================================================================
-# Target rules for targets named animated_box
+# Target rules for targets named independent_listener
 
 # Build rule for target.
-animated_box: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 animated_box
-.PHONY : animated_box
+independent_listener: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 independent_listener
+.PHONY : independent_listener
 
 # fast build rule for target.
-animated_box/fast:
-	$(MAKE) -f CMakeFiles/animated_box.dir/build.make CMakeFiles/animated_box.dir/build
-.PHONY : animated_box/fast
+independent_listener/fast:
+	$(MAKE) -f CMakeFiles/independent_listener.dir/build.make CMakeFiles/independent_listener.dir/build
+.PHONY : independent_listener/fast
 
-#=============================================================================
-# Target rules for targets named animated_box2
+animated_box1.o: animated_box1.cc.o
 
-# Build rule for target.
-animated_box2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 animated_box2
-.PHONY : animated_box2
-
-# fast build rule for target.
-animated_box2/fast:
-	$(MAKE) -f CMakeFiles/animated_box2.dir/build.make CMakeFiles/animated_box2.dir/build
-.PHONY : animated_box2/fast
-
-animated_box.o: animated_box.cc.o
-
-.PHONY : animated_box.o
+.PHONY : animated_box1.o
 
 # target to build an object file
-animated_box.cc.o:
-	$(MAKE) -f CMakeFiles/animated_box.dir/build.make CMakeFiles/animated_box.dir/animated_box.cc.o
-.PHONY : animated_box.cc.o
+animated_box1.cc.o:
+	$(MAKE) -f CMakeFiles/animated_box1.dir/build.make CMakeFiles/animated_box1.dir/animated_box1.cc.o
+.PHONY : animated_box1.cc.o
 
-animated_box.i: animated_box.cc.i
+animated_box1.i: animated_box1.cc.i
 
-.PHONY : animated_box.i
+.PHONY : animated_box1.i
 
 # target to preprocess a source file
-animated_box.cc.i:
-	$(MAKE) -f CMakeFiles/animated_box.dir/build.make CMakeFiles/animated_box.dir/animated_box.cc.i
-.PHONY : animated_box.cc.i
+animated_box1.cc.i:
+	$(MAKE) -f CMakeFiles/animated_box1.dir/build.make CMakeFiles/animated_box1.dir/animated_box1.cc.i
+.PHONY : animated_box1.cc.i
 
-animated_box.s: animated_box.cc.s
+animated_box1.s: animated_box1.cc.s
 
-.PHONY : animated_box.s
+.PHONY : animated_box1.s
 
 # target to generate assembly for a file
-animated_box.cc.s:
-	$(MAKE) -f CMakeFiles/animated_box.dir/build.make CMakeFiles/animated_box.dir/animated_box.cc.s
-.PHONY : animated_box.cc.s
+animated_box1.cc.s:
+	$(MAKE) -f CMakeFiles/animated_box1.dir/build.make CMakeFiles/animated_box1.dir/animated_box1.cc.s
+.PHONY : animated_box1.cc.s
 
 animated_box2.o: animated_box2.cc.o
 
@@ -215,6 +228,33 @@ animated_box2.s: animated_box2.cc.s
 animated_box2.cc.s:
 	$(MAKE) -f CMakeFiles/animated_box2.dir/build.make CMakeFiles/animated_box2.dir/animated_box2.cc.s
 .PHONY : animated_box2.cc.s
+
+animated_box3.o: animated_box3.cc.o
+
+.PHONY : animated_box3.o
+
+# target to build an object file
+animated_box3.cc.o:
+	$(MAKE) -f CMakeFiles/animated_box3.dir/build.make CMakeFiles/animated_box3.dir/animated_box3.cc.o
+.PHONY : animated_box3.cc.o
+
+animated_box3.i: animated_box3.cc.i
+
+.PHONY : animated_box3.i
+
+# target to preprocess a source file
+animated_box3.cc.i:
+	$(MAKE) -f CMakeFiles/animated_box3.dir/build.make CMakeFiles/animated_box3.dir/animated_box3.cc.i
+.PHONY : animated_box3.cc.i
+
+animated_box3.s: animated_box3.cc.s
+
+.PHONY : animated_box3.s
+
+# target to generate assembly for a file
+animated_box3.cc.s:
+	$(MAKE) -f CMakeFiles/animated_box3.dir/build.make CMakeFiles/animated_box3.dir/animated_box3.cc.s
+.PHONY : animated_box3.cc.s
 
 independent_listener.o: independent_listener.cc.o
 
@@ -276,18 +316,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... animated_box2"
+	@echo "... animated_box3"
+	@echo "... animated_box1"
+	@echo "... integrated_main"
 	@echo "... rebuild_cache"
 	@echo "... independent_listener"
-	@echo "... integrated_main"
 	@echo "... edit_cache"
-	@echo "... animated_box"
-	@echo "... animated_box2"
-	@echo "... animated_box.o"
-	@echo "... animated_box.i"
-	@echo "... animated_box.s"
+	@echo "... animated_box1.o"
+	@echo "... animated_box1.i"
+	@echo "... animated_box1.s"
 	@echo "... animated_box2.o"
 	@echo "... animated_box2.i"
 	@echo "... animated_box2.s"
+	@echo "... animated_box3.o"
+	@echo "... animated_box3.i"
+	@echo "... animated_box3.s"
 	@echo "... independent_listener.o"
 	@echo "... independent_listener.i"
 	@echo "... independent_listener.s"
