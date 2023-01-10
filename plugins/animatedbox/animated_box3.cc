@@ -49,8 +49,8 @@ namespace gazebo
         key = anim->CreateKeyFrame(14.0);
         key->Translation(ignition::math::Vector3d(2, -2, 0));
 
-	      key = anim->CreateKeyFrame(15.0);
-        key->Translation(ignition::math::Vector3d(2, -2, 0));
+	      //key = anim->CreateKeyFrame(15.0);
+        //key->Translation(ignition::math::Vector3d(2, -2, 0));
 
 	      key = anim->CreateKeyFrame(20);
         key->Translation(ignition::math::Vector3d(10, 2, 0));

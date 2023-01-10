@@ -62,54 +62,6 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
-    <model name='box1'>
-      <pose frame=''>0 0 0 0 -0 0</pose>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>0.5 0.5 1.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>0.5 0.5 1.5</size>
-            </box>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <inertial>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-          <mass>1</mass>
-        </inertial>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <plugin name='push_animate1' filename='libanimated_box1.so'/>
-    </model>
-
     <model name='box2'>
       <pose frame=''>0 1 0 0 -0 0</pose>
       <link name='link'>
