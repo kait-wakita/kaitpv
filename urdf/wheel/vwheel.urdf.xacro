@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find megarover_samples)/urdf/common.xacro"/>
-  <xacro:include filename="$(find megarover_samples)/urdf/wheel/wheel.transmission.xacro"/>
-  <xacro:include filename="$(find megarover_samples)/urdf/wheel/wheel.gazebo.xacro"/>
+  <xacro:include filename="$(find kaitpv)/urdf/common.xacro"/>
+  <xacro:include filename="$(find kaitpv)/urdf/wheel/wheel.transmission.xacro"/>
+  <xacro:include filename="$(find kaitpv)/urdf/wheel/wheel.gazebo.xacro"/>
 
   <xacro:property name="wheel_radius" value="0.076"/>
   <xacro:property name="wheel_length" value="0.03"/>
@@ -21,7 +21,7 @@
     <link name="${prefix}_wheel_link">
       <visual>
         <geometry>
-          <mesh filename="package://megarover_samples/meshes/dae/vmega_wheel.dae"/>
+          <mesh filename="package://kaitpv/meshes/dae/vmega_wheel.dae"/>
         </geometry>
       </visual>
       <collision>

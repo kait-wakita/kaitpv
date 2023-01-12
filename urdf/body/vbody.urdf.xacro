@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find megarover_samples)/urdf/body/body.gazebo.xacro"/>
+  <xacro:include filename="$(find kaitpv)/urdf/body/body.gazebo.xacro"/>
 
   <xacro:macro name="base_v0" params="parent *joint_origin">
     <joint name="base_link_joint" type="fixed">
@@ -13,12 +13,12 @@
     <link name="base_link">
       <visual>
         <geometry>
-          <mesh filename="package://megarover_samples/meshes/dae/vmega_body.dae"/>
+          <mesh filename="package://kaitpv/meshes/dae/vmega_body.dae"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://megarover_samples/meshes/stl/vmega_body.stl"/>
+          <mesh filename="package://kaitpv/meshes/stl/vmega_body.stl"/>
         </geometry>
       </collision>
       <inertial>

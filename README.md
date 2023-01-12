@@ -23,8 +23,6 @@
 
 * ubuntu 18.04
 * ros melodic
-* megarover シミュレータ
-    * インストールはcd ~/catkin_ws/src; git clone https://github.com/vstoneofficial/megarover_samples/
 * WSL2 (windows11)でも動作確認済
 
 # インストール
