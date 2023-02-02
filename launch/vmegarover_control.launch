@@ -7,7 +7,7 @@ vmegarover.urdf.xacroなどから呼び出されます。
 <launch>
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
-  <rosparam file="$(find kaitpv)/configuration_files/vmegarover_controller.yaml" command="load"/>
+  <rosparam file="$(find megarover_samples)/configuration_files/vmegarover_controller.yaml" command="load"/>
 
   <!-- load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" 
