@@ -26,7 +26,7 @@
 
   <!-- Front LRF -->
   <xacro:lrf_v0 prefix="front" parent="base_link">
-    <origin xyz="0.099 0 0.9"/>
+    <origin xyz="0.099 0 0.5"/>
   </xacro:lrf_v0>
 
   <!-- Front LRF Upper-->

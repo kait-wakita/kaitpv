@@ -34,7 +34,7 @@
   <include file="$(find kaitpv)/launch/vmegarover_control.launch"/>
   
 
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find kaitpv)/rviz/kaitpv_amcl.rviz"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find kaitpv)/rviz/kaitpv_vo.rviz"/>
 
 
 </launch>
