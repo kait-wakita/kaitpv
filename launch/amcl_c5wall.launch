@@ -4,7 +4,7 @@
 
 <launch>
   <!-- mapサーバー -->
-  <arg name="map_file" default="$(find kaitpv)/maps/c5wall.yaml"/>
+  <arg name="map_file" default="$(find kaitpv)/maps/c5wall2.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
  
   <!-- 
@@ -26,8 +26,8 @@
     <param name="recovery_alpha_fast" value="0.1"/>
     <param name="odom_alpha1" value="5.0"/>		
     <param name="odom_alpha2" value="5.0"/>
-    <param name="odom_alpha3" value="2.2"/>
-    <param name="odom_alpha4" value="1.0"/>
+    <param name="odom_alpha3" value="5.2"/>
+    <param name="odom_alpha4" value="5.0"/>
     <param name="laser_max_beams" value="180"/>
     <param name="laser_z_hit" value="0.95"/>
     <param name="laser_z_short" value="0.05"/>
