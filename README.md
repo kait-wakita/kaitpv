@@ -29,7 +29,10 @@
 git cloneだけで動くと思われるが、念のため一部再buildする
 
 ```bash
+sudo apt update
+sudo apt install ros-noetic-navigation
 cd ~/catkin_ws/src
+git clone https://github.com/vstoneofficial/megarover_samples.git
 git clone https://github.com/kait-wakita/kaitpv.git
 cd plugins/animatedbox
 rm -rf build
@@ -37,6 +40,8 @@ mkdir build
 cd build
 cmake ..
 make
+cd ~/catkin_ws
+catkin_make
 ```
 
 # 使用方法(Gazebo)
