@@ -21,8 +21,7 @@
 
 # 動作条件
 
-* ubuntu 18.04
-* ros melodic
+* ubuntu 18.04 + ros melodic (20.04+noeticもok)
 * WSL2 (windows11)でも動作確認済
 
 # インストール
@@ -30,7 +29,7 @@ git cloneだけで動くと思われるが、念のため一部再buildする
 
 ```bash
 sudo apt update
-sudo apt install ros-noetic-navigation
+sudo apt install ros-melodic-navigation
 cd ~/catkin_ws/src
 git clone https://github.com/vstoneofficial/megarover_samples.git
 git clone https://github.com/kait-wakita/kaitpv.git
